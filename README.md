@@ -21,13 +21,13 @@ This repository contains a simple Python webhook application using Flask and gun
 1. Clone the repository to your local machine.
 
 ```bash
-git clone https://github.com/yourusername/python-webhook-app.git
+git clone https://github.com/yourusername/uplift-sample-webhooks-python-app.git
 ```
 
 2. Navigate to the project directory.
 
 ```bash
-cd python-webhook-app
+cd uplift-sample-webhooks-python-app
 ```
 3. Create a virtual environment (optional, but recommended).
 
