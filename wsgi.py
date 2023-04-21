@@ -1,6 +1,6 @@
 import os
 
-os.environ['SECRET_TOKEN'] = 'your_secret_token_here'
+os.environ['SECRET_TOKEN'] = 'replace_with_secret_token'
 
 from app import app
 
