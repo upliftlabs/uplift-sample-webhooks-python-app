@@ -85,3 +85,23 @@ python test.py
 The test script will start the Flask app, send a POST request to the `/webhook/submit` endpoint with a JSON payload and the `x-uplift-signature-256` header, and then print the webhook body, header value, and environment variable to the terminal.
 
 If the test is successful, the script will exit without any errors.
+
+## Deploying Flask Application on GoDaddy cPanel
+
+1. **Log in to your GoDaddy cPanel account**: Access your GoDaddy account and navigate to the cPanel dashboard.
+
+2. **Create a Python application environment**: In the cPanel dashboard, look for the "Software" section and click on "Setup Python App". Choose the Python version you want to use, and then set the application root and the application URL. Click on "Create" to create the Python application environment.
+
+3. **Upload your application files**: You can use an FTP client (like FileZilla) or the cPanel File Manager to upload your application files to the server. Make sure to upload the files to the application root directory you specified in step 2.
+
+4. **Install the required packages**: In your cPanel Python application environment, you'll see a "Packages" section. Click on "Enter" and then input the package names and their respective versions (one at a time) that your application requires (e.g., Flask, gunicorn, requests). Click on "Install" to install each package.
+
+5. **Configure your application**: In the cPanel Python application environment, you'll see a section called "App Configuration". Here, you should specify the entry point to your application. Set the "WSGI" field to the path of your WSGI file (e.g., `app:app` if your main file is named `app.py`).
+
+6. **Set environment variables**: In the "Environment Variables" section of the cPanel Python application environment, add any necessary environment variables (such as `SECRET_TOKEN`).
+
+7. **Restart your application**: In the cPanel Python application environment, click on "Restart" to apply the changes and start your application.
+
+8. **Test your application**: Access your application using the application URL you set in step 2. Check if the webhook functionality is working as expected.
+
+Please note that specific steps may vary slightly depending on your cPanel version and configuration. If you encounter any issues or need further assistance, you can consult GoDaddy's help documentation or contact their support team.
