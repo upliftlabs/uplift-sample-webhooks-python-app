@@ -1,0 +1,18 @@
+{
+  "id": "8caf3fd5-9369-4988-bbea-be2f4d2f6271",
+  "object": "event",
+  "type": "webhook.created",
+  "api_version": "01/01/2022",
+  "created": 1677864705656,
+  "data": {
+      "object": {
+          "id": "88fe4a35-7aa6-4d66-8b6f-19dfdf2792d9",
+          "userId": "76e04742-0762-4df7-a5f7-72fd25b81173",
+          "eventTypeIds": [
+              "movement.analytics.created"
+          ],
+          "hookUrl": "https://webhook.site/b825b2ad-29f8-4ccb-92cc-078dc4e4e10a",
+          "description": "Test"
+      }
+  }
+}
